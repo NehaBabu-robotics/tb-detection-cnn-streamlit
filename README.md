@@ -1,40 +1,99 @@
 # Tuberculosis Detection using CNN & Streamlit
 
 ## Overview
-This project presents a CNN-based system for detecting tuberculosis from chest X-ray images. The model analyzes medical images and clinical data to assist early diagnosis and improve healthcare accessibility.
+This project implements a Convolutional Neural Network (CNN) to detect tuberculosis from chest X-ray images. The system is deployed using Streamlit to provide an easy-to-use interface for real-time diagnosis.
+
+The solution demonstrates computer vision, deep learning, and deployment of AI models for healthcare applications.
+
+---
 
 ## Key Features
-- 3-layer CNN model built with TensorFlow/Keras
-- Image-based tuberculosis detection
-- Streamlit web interface for easy use
-- High accuracy with combined medical image and clinical data
+- CNN-based chest X-ray classification
+- Achieved ~98% accuracy
+- Streamlit interface for real-time predictions
+- Supports image upload and instant diagnosis
+- Designed for healthcare decision support
 
-## Model Architecture
-- Convolutional layers: 32, 64, 128 filters
-- Max pooling for feature reduction
-- Fully connected layer (512 units)
-- Softmax output for classification
+---
 
-## Dataset
-- 5,000 chest X-ray images
-- Clinical data including age and gender
+## My Contribution
+- Developed and trained the CNN model
+- Preprocessed medical image datasets
+- Evaluated model performance using accuracy & loss metrics
+- Built and tested Streamlit interface for user interaction
+- Validated predictions on normal and TB cases
 
-## Performance
-- Accuracy: 98%
-- Precision: 99%
-- Recall: 96%
-- F1 Score: 98%
+---
+
+## Streamlit Interface
+
+![Streamlit Platform](Streamlit_Platform.jpg)
+
+The web interface allows users to upload chest X-ray images and receive instant predictions.
+
+---
+
+## Model Predictions
+
+### Normal Case
+![Normal Result](Normal_Result.jpg)
+
+### Tuberculosis Case
+![TB Result](Tuberculosis_Result.jpg)
+
+---
+
+## Model Performance
+
+### Accuracy Curve
+![Accuracy Curve](LearningCurve_Accuracy.jpg)
+
+### Loss Curve
+![Loss Curve](LearningCurve_Loss.jpg)
+
+The model demonstrates high accuracy and stable convergence during training.
+
+---
+
+## Training & Evaluation Logs
+
+![Training Logs](TrainTestModelling.jpg)
+![Training Logs](TrainTestModeling2.jpg)
+
+---
+
+## Prediction Pipeline Example
+
+![Prediction Code](Checking_Result.jpg)
+
+---
+
+## Demo Videos
+
+### Code Walkthrough
+https://drive.google.com/file/d/1x8hF0PcaKSAoOlECP_GTpXCuo4Eorteg/view?usp=sharing
+
+### Streamlit Demo
+https://drive.google.com/file/d/13otCkbqM_E05Oru8zuSTWbCRjzQnjPvR/view?usp=sharing
+
+---
 
 ## Technologies Used
 - Python
 - TensorFlow / Keras
 - Streamlit
 - OpenCV
+- NumPy
+
+---
+
+## Dataset
+- Kaggle TB Chest X-ray dataset
+- OpenI medical imaging dataset
+
+---
 
 ## Applications
-- AI-assisted medical diagnosis
-- Healthcare decision support
-- Medical image analysis
-
-## My Contribution
-Developed and trained the CNN model, integrated clinical data inputs, and built a Streamlit interface for user-friendly diagnosis.
+- AI-assisted tuberculosis diagnosis
+- Medical image classification
+- Healthcare decision support systems
